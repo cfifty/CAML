@@ -38,7 +38,7 @@ You can create a conda environment with the correct dependencies using the follo
 ```
 cd CAML
 conda env create -f environment.yml
-conda activate FRN
+conda activate caml
 ```
 
 ## Setup
