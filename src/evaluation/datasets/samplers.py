@@ -66,7 +66,7 @@ class random_sampler(Sampler):
         self.way = way
         self.shot = shot
         self.trial = trial
-        self.query_shot = 16
+        self.query_shot = query_shot
 
     def __iter__(self):
 
