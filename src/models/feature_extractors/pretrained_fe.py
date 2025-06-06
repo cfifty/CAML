@@ -2,9 +2,7 @@ import torch
 import timm
 import sys
 
-from pyprojroot import here as project_root
-
-sys.path.insert(0, str(project_root()))
+sys.path.append("/home/ubuntu/flowtolearn-D2NWG/CAML")
 
 import src.datasets.transforms as fe_transforms
 
@@ -56,7 +54,7 @@ def get_fe_metadata(args):
 
 def get_timm_model(model_name, model_type, dtype=None):
     # model types that only rely on fixed pretrained backbones
-    if model_type in ['CAML', 'MetaQDA', 'SNAIL'] or 'ICL' in model_type:
+    if model_type in ['CAML', 'MetaQDA', 'SNAIL', "SetTransformer"] or 'ICL' in model_type:
         if 'clip' in model_name:
             model = timm.create_model(model_name,
                                       pretrained=True,

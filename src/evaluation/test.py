@@ -1,9 +1,7 @@
 import sys
 import torch
 
-from pyprojroot import here as project_root
-
-sys.path.insert(0, str(project_root()))
+sys.path.append("/home/ubuntu/flowtolearn-D2NWG/CAML")
 
 from src.evaluation.utils import get_test_path, get_model
 from src.evaluation.eval import meta_test

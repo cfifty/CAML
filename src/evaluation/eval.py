@@ -3,9 +3,8 @@ import torch
 import numpy as np
 from tqdm import tqdm
 
-from pyprojroot import here as project_root
+sys.path.append("/home/ubuntu/flowtolearn-D2NWG/CAML")
 
-sys.path.insert(0, str(project_root()))
 from src.evaluation.datasets import dataloaders
 
 

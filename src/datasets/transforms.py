@@ -5,9 +5,7 @@ import timm
 from PIL import Image, ImageFilter
 from torchvision import transforms
 
-from pyprojroot import here as project_root
-
-sys.path.insert(0, str(project_root()))
+sys.path.append("/home/ubuntu/flowtolearn-D2NWG/CAML")
 
 
 def get_timm_transform(timm_model):

@@ -81,7 +81,7 @@ class random_sampler(Sampler):
         for i in range(trial):
 
             id_list = []
- 
+
             np.random.shuffle(list_class_id)
             picked_class = list_class_id[:way]
 
